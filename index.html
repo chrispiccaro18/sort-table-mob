@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorted Contacts</title>
+    <link rel="stylesheet" href="src/main.css">
+</head>
+<body>
+    <header>
+        <img src="assets/alchemy-logo.png" alt="Alchemy Code Lab Logo">
+        <h1>Sorted Contacts</h1>
+    </header>
+    <main>
+        <p>
+            <select id="sort-select">
+                <option value="" disabled selected>Select sort criteria</option>
+                <option value="isActive">Active</option>
+                <option value="balance">Balance</option>
+                <option value="firstName">First Name</option>
+                <option value="lastName">Last Name</option>
+                <option value="company">Company</option>
+                <option value="favoriteFruit">Fruit</option>
+            </select>
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Active</th>
+                    <th>Balance</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Company</th>
+                    <th>Fruit</th>
+                </tr>
+            </thead>
+            <tbody id="contacts-table-body"></tbody>
+        </table>
+    </main>
+    <script type="module" src="src/index.js"></script>
+</body>
+</html>
